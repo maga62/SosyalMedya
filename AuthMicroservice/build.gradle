@@ -1,0 +1,20 @@
+
+dependencies {
+    implementation libs.springBootDataJpa
+    implementation libs.springCloudStarterOpenFeign
+    implementation libs.postgresqlDriver
+    implementation libs.lombok
+    annotationProcessor libs.lombok
+    implementation libs.springCloudConfigClient
+}
+
+application {
+    mainClass = 'com.maga.AuthApp'
+}
+
+bootJar {
+    archiveBaseName.set('auth-service')
+    archiveVersion.set('0.0.1-SNAPSHOT')
+    mainClass = 'com.maga.AuthApp'
+}
+

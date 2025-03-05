@@ -1,0 +1,16 @@
+
+dependencies {
+
+    implementation libs.springCloudConfig
+    implementation libs.springCloudConfigServer
+}
+
+application {
+    mainClass = 'com.maga.ConfigServerApplication'
+}
+
+bootJar {
+    archiveBaseName.set('config-server')
+    archiveVersion.set('0.0.1-SNAPSHOT')
+    mainClass = 'com.maga.ConfigServerApplication'
+}

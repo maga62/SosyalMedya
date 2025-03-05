@@ -1,0 +1,7 @@
+server:
+  port: 9091
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://muhammed:1@localhost:27017/UserProfileDB?authSource=UserProfileDB
